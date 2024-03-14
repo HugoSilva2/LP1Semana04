@@ -41,11 +41,20 @@ namespace BetterDecorator
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-           string s = args[0];
+           if (args.Length == 0)
+           {
+                Console.WriteLine(Decor());
+           }
+           
+           else
+           {
+            string s = args[0];
            char dec = char.Parse(args[1]);
            int num = int.Parse(args[2]);
            s = Decor(s,dec,num);
            Console.WriteLine(s);
+           }
+           
 
         }
     }
