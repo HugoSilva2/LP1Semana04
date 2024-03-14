@@ -25,7 +25,12 @@ namespace BetterDecorator
             }
             return s;
         }
-
+        
+        /// <summary>
+        /// This Method works if the user don't put any arguments
+        /// This Decor() method returns the Decor() method with arguments
+        /// </summary>
+        /// <returns></returns>
         private static string Decor()
         {
             return Decor("User did not specify args!", '=', 3);
@@ -37,6 +42,7 @@ namespace BetterDecorator
         /// The third argument is turned into an integer
         /// Then runs the method Decor()
         /// Writes the outcome of the method Decor()
+        /// If the there's no arguments, it will print "===User did not specify args!==="
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
