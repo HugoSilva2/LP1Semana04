@@ -25,6 +25,12 @@ namespace BetterDecorator
             }
             return s;
         }
+
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=', 3);
+        }
+        
         /// <summary>
         /// It receives 3 arguments
         /// The second argument is turned into a character
